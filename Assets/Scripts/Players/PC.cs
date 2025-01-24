@@ -110,6 +110,30 @@ public class PC : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Trigger!");
+        Debug.Log(other.gameObject.tag);
+
+        if(other.gameObject.tag=="Peigne")
+        {
+            Debug.Log("Peigne");
+            Debug.Log("Meurt");
+        }
+        else if(other.gameObject.tag == "FilElectrique")
+        {
+            Debug.Log("FilElectrique");
+            Debug.Log("Meurt");
+        }
+        else if (other.gameObject.tag == "EauGoutte")
+        {
+            Debug.Log("EauGoutte");
+            Debug.Log("Meurt");
+        }
+        else
+        {
+            Debug.Log("Autre tag");
+        }
+        //Debug.Log(other.tag);
+
+        //print le type de l'objet
     }
 
 }
