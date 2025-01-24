@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,17 +7,25 @@ public class PC : MonoBehaviour
 {
     [Header("References")]
     protected CharacterController controller;
+    
 
     [Header("Movement Settings")]
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float gravity = 0f;
     [SerializeField] private float jumpHeight = 2f;
 
+    [Header("References Settings")]
+    [SerializeField] protected GameObject BulleMesh;
+
     private float verticalVelocity;
 
     [Header("Input")]
     private float moveInput;
     private float turnInput;
+
+
+    private Boolean bDejaTirerBulle;
+    private int nbreBulle;
 
     private void Start()
     {
@@ -32,6 +41,8 @@ public class PC : MonoBehaviour
     private void Movement()
     {
         GroundMovement();
+        Interaction();
+        Bulle();
     }
 
     private void GroundMovement()
@@ -64,9 +75,41 @@ public class PC : MonoBehaviour
         return verticalVelocity;
     }
 
+    private void Interaction()
+    {
+        //if (!controller.isGrounded)
+       // {
+        //    Debug.Log("Test Interaction");
+        //}
+
+        if(Input.GetKeyDown("e"))
+        {
+            Debug.Log("E pressed");
+        }
+    }
+
+    private void Bulle()
+    {
+    
+
+        if (Input.GetKeyDown("t"))
+        {
+            Debug.Log("t pressed");
+            Instantiate(BulleMesh, transform.position, Quaternion.identity);
+            nbreBulle++;
+
+            Debug.Log(nbreBulle);
+        }
+    }
+
     private void InputManagement()
     {
         turnInput = Input.GetAxis("Horizontal");
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("Trigger!");
     }
 
 }
