@@ -212,6 +212,14 @@ public class WorldBuilder : MonoBehaviour
 
         /// Set the mesh to the mesh filter
         meshFilter.mesh = mesh;
+
+        /// Get the mesh collider
+        MeshCollider meshCollider = meshFilter.gameObject.GetComponent<MeshCollider>();
+        if(meshCollider == null) {
+            meshCollider = meshFilter.gameObject.AddComponent<MeshCollider>();
+        }
+        meshCollider.sharedMesh = mesh;
+        
     }
 
 
