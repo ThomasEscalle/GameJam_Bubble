@@ -225,6 +225,20 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 8780183217637929573, guid: 3174ac1116ec6634880cc54a28a79eed,
       type: 3}
+  - name: SAVON
+    color: {r: 0.8113208, g: 0.6697223, b: 0.77444607, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 3485889202787476004, guid: f33bf81b170c0f1449c39c1306f63192,
+      type: 3}
+  - name: BROSSE
+    color: {r: 0.509434, g: 0.35113132, b: 0.29076186, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2452249394286839135, guid: b0157dab14b2dfa4ca8420cd7de4e371,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,
