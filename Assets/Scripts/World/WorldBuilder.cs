@@ -119,6 +119,8 @@ public class WorldBuilder : MonoBehaviour
                 if(color == Color.green) {
                     GameObject playerObject = Instantiate(player, new Vector3(i * tileSize, (j * tileSize ) + 1.5f, 0.5f ), Quaternion.identity);
 
+
+                    Debug.Log("PLAYER FOUND");
                     /// Get the "Main Camera" object
                     GameObject mainCamera = GameObject.Find("Main Camera");
                     if(mainCamera != null) {
