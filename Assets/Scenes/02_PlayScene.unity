@@ -253,6 +253,81 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 4324826804198640654, guid: 9ca69ec7e102e0e41ba70458f841474e,
       type: 3}
+  - name: LASER_LEFT
+    color: {r: 0.1882353, g: 0.21960784, b: 0.42745098, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2925793048481730398, guid: 00ed40a665a802e45973792107d4eb86,
+      type: 3}
+  - name: LASER_TOP
+    color: {r: 0.16862746, g: 0.19607843, b: 0.4, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8058313557925256849, guid: 4220ada55e0947c49a5079e23362052b,
+      type: 3}
+  - name: LASER_BOTTOM
+    color: {r: 0.14901961, g: 0.1764706, b: 0.35686275, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 1020537363946706429, guid: f78d12e8bfc9362468ff5018dc17b3d2,
+      type: 3}
+  - name: Receveur_bas
+    color: {r: 0.7372549, g: 0.6156863, b: 0.30588236, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2469659946817890188, guid: 1a35d5119816bed44acffca19ff0683c,
+      type: 3}
+  - name: Receveur_haut
+    color: {r: 0.70980394, g: 0.5803922, b: 0.25490198, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8725228772807183851, guid: 0895ad42fd820154d99b2d49fcff297b,
+      type: 3}
+  - name: Receveur_left
+    color: {r: 0.6509804, g: 0.53333336, b: 0.22745098, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 183658331671997893, guid: fadd8b00bf6f82e46b404083364101f2, type: 3}
+  - name: Receveur_right
+    color: {r: 0.58431375, g: 0.4745098, b: 0.19215687, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 183658331671997893, guid: fadd8b00bf6f82e46b404083364101f2, type: 3}
+  - name: MIRROR_BOTTOM_RIGHT
+    color: {r: 0.1254902, g: 0.6431373, b: 0.6901961, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: MIRROR_BOTTOM LEFT
+    color: {r: 0.101960786, g: 0.5647059, b: 0.60784316, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: MIRROR_TOP_RIGHT
+    color: {r: 0.09019608, g: 0.49019608, b: 0.5294118, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: MIRROR_TOP_LEFT
+    color: {r: 0.05882353, g: 0.4, b: 0.43137255, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,
@@ -714,7 +789,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 42.8
+  field of view: 40
   orthographic: 0
   orthographic size: 5
   m_Depth: -1

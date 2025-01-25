@@ -9,6 +9,7 @@ public class LazerBeam
     GameObject lazerObj;
     LineRenderer lazer;
     List<Vector3> lazerIndicies = new List<Vector3>();
+    int maxIterations = 10;
 
     public LazerBeam(Vector3 pos, Vector3 dir, Material mat)
     {
@@ -26,23 +27,31 @@ public class LazerBeam
         this.lazer.startColor = Color.red;
         this.lazer.endColor = Color.red;
 
-        this.CastRay(this.pos, this.dir, this.lazer);
+        int count = 0;
+
+        this.CastRay(this.pos, this.dir, this.lazer, ref count);
     }
 
-    void CastRay(Vector3 pos, Vector3 dir , LineRenderer lazer)
+    void CastRay(Vector3 pos, Vector3 dir , LineRenderer lazer, ref int iteration)
     {
+        if(iteration > maxIterations){
+            return;
+        }
+        iteration++;
         this.lazerIndicies.Add(pos);
         
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 30, 1)) {
-            CheckHit( hit, dir, lazer);
+        if(Physics.Raycast(ray, out hit, 80, 1)) {
+            CheckHit( hit, dir, lazer,ref iteration);
         }
         else {
-            lazerIndicies.Add(ray.GetPoint(30));
+            lazerIndicies.Add(ray.GetPoint(150));
             UpdateLazer();
         }
+
+
 
     }
 
@@ -55,12 +64,25 @@ public class LazerBeam
         }
     }
 
-    void CheckHit(RaycastHit hit, Vector3 direction, LineRenderer lazer){
+    void CheckHit(RaycastHit hit, Vector3 direction, LineRenderer lazer, ref int iteration){
         if(hit.collider.tag == "Mirror"){
             Vector3 pos = hit.point;
             Vector3 dir = Vector3.Reflect(direction, hit.normal);
 
-            CastRay(pos, dir, lazer);
+            CastRay(pos, dir, lazer, ref iteration);
+        }
+        else if(hit.collider.tag == "Bubble"){
+            Vector3 bdir = hit.collider.GetComponent<Bubble>().disiredDirection;
+            Vector3 bpos = hit.collider.transform.position + (bdir * 0.5f);
+            Debug.Log("Bubble hit going to: " + bdir);
+
+            lazerIndicies.Add(hit.point);
+            UpdateLazer();
+
+            {
+                CastRay(bpos, bdir, lazer, ref iteration);
+            }
+            
         }
         else {
             lazerIndicies.Add(hit.point);
