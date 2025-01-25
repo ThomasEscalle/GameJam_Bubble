@@ -9,6 +9,7 @@ TagManager:
   - FilElectrique
   - EauGoutte
   - Ground
+  - Bulle
   layers:
   - Default
   - TransparentFX
