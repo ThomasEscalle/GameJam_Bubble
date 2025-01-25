@@ -117,6 +117,17 @@ public class GameManagerMain : MonoBehaviour
         }
     }
 
+    public void LoadNextLevel() {
+        if(currentLevel < levels.Length - 1)
+        {
+            LoadLevel(currentLevel + 1);
+        }
+        else {
+            /// Load the final scene
+            SceneManager.LoadScene("03_EndScene");
+        }
+    }
+
 
     #endregion
 

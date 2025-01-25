@@ -73,6 +73,7 @@ public class lastplayer : MonoBehaviour
         if(other.gameObject.layer == 7)
         {
             Debug.Log("VICOTRY");
+            GameManagerMain.instance.LoadNextLevel();
         }
 
 
