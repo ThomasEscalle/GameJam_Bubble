@@ -446,7 +446,7 @@ Transform:
   m_GameObject: {fileID: 483383030}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.61, y: 0.8857076, z: -0.3359006}
+  m_LocalPosition: {x: 29.4, y: 0.8857076, z: -0.3359006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -505,6 +505,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   jump: 1.5
+  bIsFacingRight: 1
+  BulleMesh: {fileID: 457866998609760459, guid: 525ad6ef0c5a8ea4abafc911ebace5d5,
+    type: 3}
+  Marche: {fileID: 0}
+  Jump: {fileID: 0}
+  Create_Bulle: {fileID: 0}
 --- !u!1 &610427665
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,7 +611,7 @@ Transform:
   m_GameObject: {fileID: 610427665}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.68, y: 2.5, z: -0.3359006}
+  m_LocalPosition: {x: 27.47, y: 2.5, z: -0.3359006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
