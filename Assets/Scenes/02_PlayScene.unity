@@ -197,6 +197,13 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 8301975944577407121, guid: 25bc6d9f6a0647644ad2cb8ad49bd1db,
       type: 3}
+  - name: VICTORY_ASSET
+    color: {r: 0.5607422, g: 0.8962264, b: 0.5538003, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8780183217637929573, guid: 3174ac1116ec6634880cc54a28a79eed,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,

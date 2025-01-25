@@ -69,19 +69,26 @@ public class lastplayer : MonoBehaviour
         {
 
         }
-            Vector3 normal = other.GetContact(0).normal;
-            if(normal == Vector3.up)
-            {
-                grounded = true;
-            }
+
+        if(other.gameObject.layer == 7)
+        {
+            Debug.Log("VICOTRY");
+        }
+
+
+        Vector3 normal = other.GetContact(0).normal;
+        if(normal == Vector3.up)
+        {
+            grounded = true;
+        }
     }
 
     private void OnCollisionExit(Collision other)
     {
         if (other.gameObject.CompareTag("Ground"))
         {
-            grounded = false;
         }
+        grounded = false;
     }
 
     private void Flip()

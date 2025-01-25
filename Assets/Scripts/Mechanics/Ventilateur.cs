@@ -14,6 +14,7 @@ public class Ventilateur : MonoBehaviour
     }
     /// The direction of the ventilator.
     public Direction direction = Direction.Up;
+    
     /// The range of the ventilator.
     public float range = 8.0f;
 
@@ -38,7 +39,6 @@ public class Ventilateur : MonoBehaviour
             Bubble bubble = other.GetComponent<Bubble>();
             if (bubble != null)
             {
-                Debug.Log("Ventilateur");
                 bubble.disiredDirection = Vector3.up;
             }
         }
