@@ -13,8 +13,10 @@ public class lastplayer : MonoBehaviour
     public float speed;
     public float jump;
 
+    public float bubleSpawnDistance = 1.0f;
+
     private Boolean bDejaTirerBulle;
-    private int nbreBulle;
+    public static int nbreBulle;
 
     [SerializeField] private bool bIsFacingRight = true;
 
@@ -25,7 +27,6 @@ public class lastplayer : MonoBehaviour
     [SerializeField] private AudioSource Marche;
     [SerializeField] private AudioSource Jump;
     [SerializeField] private AudioSource Create_Bulle;
-
 
     bool grounded;
     // Start is called before the first frame update
@@ -66,15 +67,13 @@ public class lastplayer : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Ground"))
         {
+
+        }
             Vector3 normal = other.GetContact(0).normal;
             if(normal == Vector3.up)
             {
                 grounded = true;
             }
-
-
-            
-        }
     }
 
     private void OnCollisionExit(Collision other)
@@ -98,10 +97,6 @@ public class lastplayer : MonoBehaviour
 
     private void Interaction()
     {
-        //if (!controller.isGrounded)
-        // {
-        //    Debug.Log("Test Interaction");
-        //}
 
         if (Input.GetButtonDown("Interact"))
         {
@@ -111,15 +106,31 @@ public class lastplayer : MonoBehaviour
 
     private void FaireBulle()
     {
-        if ((Input.GetButtonDown("MakeBulle")) && nbreBulle <=3)
+        if ((Input.GetButtonDown("MakeBulle")) && nbreBulle < 3)
         {
-            Debug.Log("MakeBulle:on a appuyer sur t, on peut creer bulle");
-            Instantiate(BulleMesh, transform.position, Quaternion.identity);
-            nbreBulle++;
-            Create_Bulle.Play();
 
-            Debug.Log("On a ce nombre de bulles:");
-            Debug.Log(nbreBulle);
+            /// Create the position and the rotation of the bubble
+            Vector3 spawnPosition = transform.position;
+            Vector3 spawnDirection = transform.right;
+
+            if (bIsFacingRight)
+            {
+                spawnPosition += transform.right * bubleSpawnDistance;
+                
+            }
+            else
+            {
+                spawnPosition -= transform.right * bubleSpawnDistance;
+                spawnDirection = -transform.right;
+            }
+
+            GameObject bulle = Instantiate(BulleMesh, spawnPosition, Quaternion.identity);
+            nbreBulle++;
+
+            Bubble bubbleScript = bulle.GetComponent<Bubble>();
+            bubbleScript.direction = spawnDirection;
+            bubbleScript.disiredDirection = spawnDirection;
+            bubbleScript.speed = 5.0f;
         }
     }
 }
