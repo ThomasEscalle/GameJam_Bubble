@@ -13,6 +13,9 @@ public class PC : MonoBehaviour
     [SerializeField] private float walkSpeed = 5f;
     [SerializeField] private float gravity = 0f;
     [SerializeField] private float jumpHeight = 2f;
+    [SerializeField] private AudioSource Marche;
+    [SerializeField] private AudioSource Jump;
+    [SerializeField] private AudioSource Create_Bulle;
 
     [Header("References Settings")]
     [SerializeField] protected GameObject BulleMesh;
@@ -100,6 +103,7 @@ public class PC : MonoBehaviour
             Debug.Log("t pressed");
             Instantiate(BulleMesh, transform.position, Quaternion.identity);
             nbreBulle++;
+            Create_Bulle.Play();
 
             Debug.Log(nbreBulle);
         }
