@@ -24,10 +24,29 @@ public class Ventilateur : MonoBehaviour
     public void Start()
     {
         /// Set the range of the ventilator.
-        BoxCollider collider = GetComponent<BoxCollider>();
         if (collider != null)
         {
-            collider.size = new Vector3(1, range, 1);
+            Debug.Log("Collider found");
+            if (direction == Direction.Up)
+            {
+                collider.size = new Vector3(1, range, 1);
+                collider.center = new Vector3(0, (range / 2)+0.5f, 0);
+            }
+            else if (direction == Direction.Down)
+            {
+                collider.size = new Vector3(1, range, 1);
+                collider.center = new Vector3(0, (-range / 2)-0.5f, 0 );
+            }
+            else if (direction == Direction.Left)
+            {
+                collider.size = new Vector3(range, 1, 1);
+                collider.center = new Vector3((-range / 2) - 0.5f, 0, 0);
+            }
+            else if (direction == Direction.Right)
+            {
+                collider.size = new Vector3(range, 1, 1);
+                collider.center = new Vector3((range / 2) + 0.5f, 0, 0);
+            }
         }
     }
 
@@ -39,7 +58,22 @@ public class Ventilateur : MonoBehaviour
             Bubble bubble = other.GetComponent<Bubble>();
             if (bubble != null)
             {
-                bubble.disiredDirection = Vector3.up;
+                if (direction == Direction.Up)
+                {
+                    bubble.disiredDirection = Vector3.up;
+                }
+                else if (direction == Direction.Down)
+                {
+                    bubble.disiredDirection = Vector3.down;
+                }
+                else if (direction == Direction.Left)
+                {
+                    bubble.disiredDirection = Vector3.left;
+                }
+                else if (direction == Direction.Right)
+                {
+                    bubble.disiredDirection = Vector3.right;
+                }
             }
         }
     }
