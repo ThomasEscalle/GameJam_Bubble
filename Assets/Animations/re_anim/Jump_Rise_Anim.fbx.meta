@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2bf70478dc3ad0d48b4e9b91df6312b6
+guid: ee30e1de4b5d40f4a9da56976ed068a7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,7 +7,7 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: surfaceShader2
+      name: lambert2
     second: {fileID: 2100000, guid: e86c976de894dbb488a452a16a2edf32, type: 2}
   - first:
       type: UnityEngine:Material
