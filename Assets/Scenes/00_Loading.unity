@@ -436,6 +436,8 @@ MonoBehaviour:
     image: {fileID: 2800000, guid: 259d72de7bb458e45bca7998b46e89f7, type: 3}
   - name: level_5
     image: {fileID: 2800000, guid: 777bec3306986f2428e202194515fa5e, type: 3}
+  - name: level_6
+    image: {fileID: 2800000, guid: bc70717e1f99eca48bbda2c7dd885918, type: 3}
   currentLevel: -1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
