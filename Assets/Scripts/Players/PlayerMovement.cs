@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
         //att
 
         // Utiliser un OnCollisionStay2D ou OnCollisionEnter2D sur le BoxCollider
-        // pour détecter si l'enfant est en contact avec un objet qui représente le sol.
+        // pour dï¿½tecter si l'enfant est en contact avec un objet qui reprï¿½sente le sol.
         
         //CheckIfGrounded();
     }

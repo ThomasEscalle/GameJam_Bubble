@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8345958626388447877}
   m_Layer: 0
   m_Name: Mirroir_Receveur_BOTTOM_MESH
-  m_TagString: Untagged
+  m_TagString: laserReceiver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -116,7 +116,7 @@ GameObject:
   - component: {fileID: 2450028329925457946}
   m_Layer: 0
   m_Name: Mirroir_Receveur_TOP_ASSET
-  m_TagString: Untagged
+  m_TagString: laserReceiver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

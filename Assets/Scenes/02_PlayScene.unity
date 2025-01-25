@@ -179,13 +179,13 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 0}
   - name: Careaux2
-    color: {r: 0.4433962, g: 0.19032574, b: 0.19032574, a: 0.003921569}
+    color: {r: 0.054901965, g: 0.054901965, b: 0.054901965, a: 0.003921569}
     type: 0
     tileX: 1
     tileY: 0
     prefab: {fileID: 0}
   - name: Careaux3
-    color: {r: 0.4745098, g: 0.4392157, b: 0.8039216, a: 0.003921569}
+    color: {r: 0.1137255, g: 0.1137255, b: 0.121568635, a: 0.003921569}
     type: 0
     tileX: 2
     tileY: 0
@@ -326,6 +326,111 @@ MonoBehaviour:
     type: 1
     tileX: 0
     tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux3
+    color: {r: 0.20392159, g: 0.20392159, b: 0.21960786, a: 0.003921569}
+    type: 0
+    tileX: 3
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux4
+    color: {r: 0.2784314, g: 0.2784314, b: 0.29803923, a: 0.003921569}
+    type: 0
+    tileX: 4
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux5
+    color: {r: 0.34509805, g: 0.34509805, b: 0.36862746, a: 0.003921569}
+    type: 0
+    tileX: 5
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux6
+    color: {r: 0.40000004, g: 0.40000004, b: 0.42352945, a: 0.003921569}
+    type: 0
+    tileX: 6
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux7
+    color: {r: 0.43137258, g: 0.43137258, b: 0.46274513, a: 0.003921569}
+    type: 0
+    tileX: 7
+    tileY: 0
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux10
+    color: {r: 0.07058824, g: 0.07058824, b: 0.08235294, a: 0.003921569}
+    type: 0
+    tileX: 0
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux11
+    color: {r: 0.15686275, g: 0.15686275, b: 0.19215688, a: 0.003921569}
+    type: 0
+    tileX: 1
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux12
+    color: {r: 0.23529413, g: 0.23529413, b: 0.29411766, a: 0.003921569}
+    type: 0
+    tileX: 2
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux13
+    color: {r: 0.29803923, g: 0.29803923, b: 0.3647059, a: 0.003921569}
+    type: 0
+    tileX: 3
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux14
+    color: {r: 0.36862746, g: 0.36862746, b: 0.45098042, a: 0.003921569}
+    type: 0
+    tileX: 4
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux15
+    color: {r: 0.35686275, g: 0.35686275, b: 0.48235297, a: 0.003921569}
+    type: 0
+    tileX: 5
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux16
+    color: {r: 0.25882354, g: 0.25882354, b: 0.36862746, a: 0.003921569}
+    type: 0
+    tileX: 6
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux17
+    color: {r: 0.25882354, g: 0.25882354, b: 0.36862746, a: 0.003921569}
+    type: 0
+    tileX: 7
+    tileY: 1
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux20
+    color: {r: 0.039215688, g: 0.039215688, b: 0.07450981, a: 0.003921569}
+    type: 0
+    tileX: 0
+    tileY: 2
+    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+      type: 3}
+  - name: Careaux27
+    color: {r: 0.08235294, g: 0.08235294, b: 0.25882354, a: 0.003921569}
+    type: 0
+    tileX: 7
+    tileY: 2
     prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
       type: 3}
   tilemapWidth: 2048
@@ -789,7 +894,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 40
+  field of view: 32
   orthographic: 0
   orthographic size: 5
   m_Depth: -1
@@ -883,6 +988,10 @@ MonoBehaviour:
   offset: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   zDistance: -25
+  minCam: 13
+  maxCam: 19
+  minCamY: 8
+  maxCamY: 20
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

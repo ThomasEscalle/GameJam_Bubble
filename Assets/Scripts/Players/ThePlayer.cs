@@ -15,6 +15,8 @@ public class lastplayer : MonoBehaviour
 
     public float bubleSpawnDistance = 1.0f;
 
+    private bool lastActionIsJump = false;
+
     private Boolean bDejaTirerBulle;
     public static int nbreBulle;
 
@@ -44,6 +46,10 @@ public class lastplayer : MonoBehaviour
 
         FaireBulle();
         Move = Input.GetAxis("Horizontal");
+        if(Move != 0)
+        {
+            lastActionIsJump = false;
+        }
 
         //rb.velocity = new Vector2(Move * speed, rb.velocity.y);  
 
@@ -54,7 +60,7 @@ public class lastplayer : MonoBehaviour
         {
             //rb.addForce(new Vector2(Move * speed, jump * 10));
 
-
+            lastActionIsJump = true;
             //rb.velocity = new Vector2(Move * speed, jump * 5);
             rb.velocity = new Vector3(Move * speed, jump * 5,0);
         }
@@ -115,7 +121,8 @@ public class lastplayer : MonoBehaviour
 
     private void FaireBulle()
     {
-        if ((Input.GetButtonDown("MakeBulle")) && nbreBulle < 3)
+
+        if ((Input.GetButtonDown("MakeBulle")) && nbreBulle < 3 && !Input.GetKey(KeyCode.W))
         {
 
             /// Create the position and the rotation of the bubble
@@ -132,6 +139,21 @@ public class lastplayer : MonoBehaviour
                 spawnPosition -= transform.right * bubleSpawnDistance;
                 spawnDirection = -transform.right;
             }
+
+            GameObject bulle = Instantiate(BulleMesh, spawnPosition, Quaternion.identity);
+            nbreBulle++;
+
+            Bubble bubbleScript = bulle.GetComponent<Bubble>();
+            bubbleScript.direction = spawnDirection;
+            bubbleScript.disiredDirection = spawnDirection;
+            bubbleScript.speed = 5.0f;
+        }
+        //// Si the player a en meme temps "Z" et "MakeBulle" on tire une bulle vers le haut
+        else if ((Input.GetButtonDown("MakeBulle")) && Input.GetKey(KeyCode.W) && nbreBulle < 3)
+        {
+            /// Tire une bulle vers le haut
+            Vector3 spawnPosition = transform.position;
+            Vector3 spawnDirection = Vector3.up;
 
             GameObject bulle = Instantiate(BulleMesh, spawnPosition, Quaternion.identity);
             nbreBulle++;

@@ -58,6 +58,10 @@ public class WorldBuilder : MonoBehaviour
             Color col = tile.color;
             col.a = 1;
             string hex = ColorUtility.ToHtmlStringRGBA(col);
+            if(tileMap.ContainsKey(hex)) {
+                Debug.LogError("Duplicate color " + hex + " for tile " + tile.name  + " and " + tileMap[hex].name);
+                continue;
+            }
             tileMap.Add(hex, tile);
         }
 

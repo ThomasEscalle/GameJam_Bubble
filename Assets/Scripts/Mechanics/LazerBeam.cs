@@ -20,12 +20,12 @@ public class LazerBeam
         this.dir = dir;
 
         this.lazer = this.lazerObj.AddComponent<LineRenderer>();
-        this.lazer.startWidth = 0.1f;
-        this.lazer.endWidth = 0.1f;
+        this.lazer.startWidth = 0.2f;
+        this.lazer.endWidth = 0.2f;
         this.lazer.material = mat;
         this.lazer.positionCount = 2;
-        this.lazer.startColor = Color.red;
-        this.lazer.endColor = Color.red;
+        this.lazer.startColor = Color.white;
+        this.lazer.endColor = Color.white;
 
         int count = 0;
 
@@ -43,15 +43,13 @@ public class LazerBeam
         Ray ray = new Ray(pos, dir);
         RaycastHit hit;
 
-        if(Physics.Raycast(ray, out hit, 80, 1)) {
+        if(Physics.Raycast(ray, out hit, 150, 1)) {
             CheckHit( hit, dir, lazer,ref iteration);
         }
         else {
-            lazerIndicies.Add(ray.GetPoint(150));
+            lazerIndicies.Add(this.dir*150);
             UpdateLazer();
         }
-
-
 
     }
 
@@ -74,7 +72,6 @@ public class LazerBeam
         else if(hit.collider.tag == "Bubble"){
             Vector3 bdir = hit.collider.GetComponent<Bubble>().disiredDirection;
             Vector3 bpos = hit.collider.transform.position + (bdir * 0.5f);
-            Debug.Log("Bubble hit going to: " + bdir);
 
             lazerIndicies.Add(hit.point);
             UpdateLazer();
@@ -83,6 +80,11 @@ public class LazerBeam
                 CastRay(bpos, bdir, lazer, ref iteration);
             }
             
+        }
+        else if(hit.collider.tag == "laserReceiver"){
+            Debug.Log("RECEIVER HIT");
+            lazerIndicies.Add(hit.point);
+            UpdateLazer();
         }
         else {
             lazerIndicies.Add(hit.point);

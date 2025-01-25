@@ -11,6 +11,7 @@ TagManager:
   - Ground
   - Bulle
   - Bubble
+  - laserReceiver
   layers:
   - Default
   - TransparentFX
