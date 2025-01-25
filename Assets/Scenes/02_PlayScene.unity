@@ -246,6 +246,13 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 7812641740288243422, guid: cde5ce31f92b07042a3f7a2eef482a8f,
       type: 3}
+  - name: LASER_RIGHT
+    color: {r: 0.22014064, g: 0.2526609, b: 0.4811321, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 4324826804198640654, guid: 9ca69ec7e102e0e41ba70458f841474e,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,
