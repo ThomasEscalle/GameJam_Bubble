@@ -60,12 +60,15 @@ public class PC : MonoBehaviour
     {
         if (controller.isGrounded)
         {
-            verticalVelocity = -1* gravity * Time.deltaTime *1/4;
 
             if (Input.GetButtonDown("Jump"))
             {
                 verticalVelocity = Mathf.Sqrt(jumpHeight * gravity * 2);
                 Debug.Log("elese jump");
+            }
+            else {
+
+                verticalVelocity = -1* gravity * Time.deltaTime *1/4;
             }
         }
         else

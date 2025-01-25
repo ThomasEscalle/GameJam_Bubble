@@ -43,7 +43,9 @@ public class WorldBuilder : MonoBehaviour
     /// The test object
     public GameObject testObject;
 
-
+    [Header("Player")]
+    /// The player object
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -111,6 +113,22 @@ public class WorldBuilder : MonoBehaviour
                     continue;
                 }
 
+                /// If the color is green : spawn the player
+                if(color == Color.green) {
+                    GameObject playerObject = Instantiate(player, new Vector3(i * tileSize, (j * tileSize ) + 0.5f, 0.5f ), Quaternion.identity);
+
+                    /// Get the "Main Camera" object
+                    GameObject mainCamera = GameObject.Find("Main Camera");
+                    if(mainCamera != null) {
+                        /// Get the CameraFollow script
+                        CameraFollow cameraFollow = mainCamera.GetComponent<CameraFollow>();
+                        if(cameraFollow != null) {
+                            /// Set the target of the camera to the player object
+                            cameraFollow.target = playerObject.transform;
+                        }
+                    }
+
+                }
 
                 /// Check if the color is in the tile map
                 if(tileMap.ContainsKey(hex)) {
@@ -191,9 +209,6 @@ public class WorldBuilder : MonoBehaviour
                     continue;
                 }
 
-                else {
-                    Debug.LogError("Color " + ColorUtility.ToHtmlStringRGBA( color ));
-                }
             }
         }
     
