@@ -239,6 +239,13 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 2452249394286839135, guid: b0157dab14b2dfa4ca8420cd7de4e371,
       type: 3}
+  - name: DOOR
+    color: {r: 0.33962262, g: 0.13699731, b: 0.11053755, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7812641740288243422, guid: cde5ce31f92b07042a3f7a2eef482a8f,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,
