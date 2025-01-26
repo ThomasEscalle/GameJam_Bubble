@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -39,6 +40,8 @@ public class lastplayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        grounded = true;
+        // a modifier si le perso est déplacer dans unity
         b_Sound_marche = false;
         
     }
@@ -54,28 +57,43 @@ public class lastplayer : MonoBehaviour
         FaireBulle();
         Move = Input.GetAxis("Horizontal");
         //Marche_sound.Play();
-        
+
         if (Move != 0)
         {
             //Debug.Log("Marche_sound");
+            Debug.Log(grounded);
 
             if (!(Marche_sound.isPlaying))
             {
-                Marche_sound.Play();
+                if (grounded == true)
+                {
+                    Marche_sound.Play();
+                }
+                else
+                {
+                    Marche_sound.Stop();
+                }
+
+
             }
             else
             {
                 Debug.Log("wait");
+                if ( grounded == false)
+                {
+                    Marche_sound.Stop();
+                }
             }
- 
-            lastActionIsJump = false;  
+
+            lastActionIsJump = false;
 
         }
+
         else
         {
             Marche_sound.Stop();
         }
-   
+     
   
 
 
@@ -127,6 +145,7 @@ public class lastplayer : MonoBehaviour
         {
         }
         grounded = false;
+      
     }
 
     private void Flip()
