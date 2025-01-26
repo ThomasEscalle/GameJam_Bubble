@@ -9,6 +9,7 @@ using UnityEngine.SceneManagement;
 public class Level{
     public string name;
     public Texture2D image;
+    public string helpText;
 }
 
 

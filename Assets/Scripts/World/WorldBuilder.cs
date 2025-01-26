@@ -81,6 +81,10 @@ public class WorldBuilder : MonoBehaviour
         }
 
 
+        if(levelData.helpText != null) {
+            GetComponent<Help>().setHelp(levelData.helpText);
+        }
+
         /// Build the mesh for the level
         BuildMesh(levelData);
 

@@ -105,7 +105,7 @@ public class lastplayer : MonoBehaviour
         //rb.velocity = new Vector3(Move * speed, rb.velocity.y,0);
 
         //if (Input.GetButtonDown("Jump") && grounded)
-        if (Input.GetButtonDown("Jump") )
+        if (Input.GetButtonDown("Jump") && grounded )
         {
             //rb.addForce(new Vector2(Move * speed, jump * 10));
 
