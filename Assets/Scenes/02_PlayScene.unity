@@ -649,7 +649,7 @@ MonoBehaviour:
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 1424509231895145990, guid: 8ea1b34b09da76748b91249388b40eb4,
+    prefab: {fileID: 1424509231895145990, guid: c1c405cfd0c14e344a6305ae8f726123,
       type: 3}
   - name: Ventilateur_ASSET_Left_1
     color: {r: 0.26666668, g: 0.7254902, b: 0.5647059, a: 0.003921569}
@@ -677,7 +677,7 @@ MonoBehaviour:
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 1424509231895145990, guid: a265e1c71f39ae648a8689ca955fcb4a,
+    prefab: {fileID: 1424509231895145990, guid: ed1ad98b8892e6a4bbf2bcf4b6554832,
       type: 3}
   - name: Ventilateur_ASSET_Left_2
     color: {r: 0.46274513, g: 0.7058824, b: 0.61960787, a: 0.003921569}
