@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
     }
 
     /// Imgui buttons to start a specific level
+    /*
     public void OnGUI() {
         /// Create a button for each level
         for (int i = 0; i < GameManagerMain.instance.levels.Length; i++) {
@@ -22,6 +23,22 @@ public class MainMenu : MonoBehaviour
                 GameManagerMain.instance.LoadLevel(i);
             }
         }
+    }
+    */
+
+    public void Play()
+    {
+        GameManagerMain.instance.LoadLevel(1);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void Settings()
+    {
+        Debug.Log("Settings");  
     }
 
 }
