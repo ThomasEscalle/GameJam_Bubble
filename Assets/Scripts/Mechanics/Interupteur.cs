@@ -9,6 +9,9 @@ public class Interupteur : MonoBehaviour
     private bool On = true;
     [SerializeField] private Ventilateur SCR_ventilateur;
     [SerializeField] private BoxCollider Vent_Ventilo;
+    [SerializeField] private ParticleSystem Particule;
+    [SerializeField] AudioSource Audio_allume;
+    [SerializeField] AudioSource Audio_eteint;
 
 
 
@@ -19,6 +22,15 @@ public class Interupteur : MonoBehaviour
         Ventilateur[] ventilateurs = FindObjectsOfType<Ventilateur>();
         foreach (Ventilateur ventilateur in ventilateurs) {
             if (ventilateur.EventChannel == eventChannel) {
+                Particule.Play();
+                if (On)
+                {
+                    Audio_eteint.Play();
+                }
+                else
+                {
+                    Audio_allume.Play();
+                }
                 ventilateur.trigger();
             }
         }

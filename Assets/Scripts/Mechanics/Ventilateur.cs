@@ -27,6 +27,12 @@ public class Ventilateur : MonoBehaviour
 
     public bool menabled = true;
 
+    [SerializeField] AudioSource Audio_ventilo;
+
+    [SerializeField] AudioSource Audio_ventilo_allume;
+
+    public bool allume = false;
+
     private ParticleSystem ps;
 
     public void trigger()
@@ -35,11 +41,13 @@ public class Ventilateur : MonoBehaviour
         {
             menabled = false;
             ps.Stop();
+            allume = false;
         }
         else
         {
             menabled = true;
             ps.Play();
+            allume = true;
         }
 
     }
@@ -55,6 +63,7 @@ public class Ventilateur : MonoBehaviour
 
     public void Start()
     {
+
         if(menabled)
         {
             ps.Play();
@@ -92,6 +101,11 @@ public class Ventilateur : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        BoucleAudio();
+    }
+
 
     public void OnTriggerEnter(Collider other)
     {
@@ -124,6 +138,25 @@ public class Ventilateur : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void BoucleAudio()
+    {
+        if (allume)
+        {
+            Audio_ventilo.Stop();
+        }
+        else
+        {
+            //Audio_ventilo_allume.Play();
+            if ( !(Audio_ventilo_allume.isPlaying))
+            {
+                //Audio_ventilo.Play();
+                Audio_ventilo.loop = true;
+            }
+
+        }
+
     }
 
 }

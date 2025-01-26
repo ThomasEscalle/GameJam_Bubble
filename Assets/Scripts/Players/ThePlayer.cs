@@ -36,6 +36,7 @@ public class lastplayer : MonoBehaviour
     [SerializeField] private AudioSource Marche_sound;
     [SerializeField] private AudioSource Jump_sound;
     [SerializeField] private AudioSource Create_Bulle_sound;
+    [SerializeField] private AudioSource Box_Savon;
 
     bool grounded;
     // Start is called before the first frame update
@@ -133,7 +134,9 @@ public class lastplayer : MonoBehaviour
             /// Only call this function once every 2 seconds
             if (!isVictory)
             {
+                Box_Savon.Play();
                 isVictory = true;
+                
                 GameManagerMain.instance.LoadNextLevel();
             }
         }
