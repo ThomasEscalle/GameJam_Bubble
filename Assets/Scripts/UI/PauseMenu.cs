@@ -10,6 +10,13 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject pauseMenuUI;
 
+    [SerializeField] AudioSource Pause_music;
+
+    private void Start()
+    {
+        Pause_music.loop = true;
+        Pause_music.Play();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -43,6 +50,7 @@ public class PauseMenu : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
+        Pause_music.Stop();
         SceneManager.LoadScene("01_Menu");
     }
 

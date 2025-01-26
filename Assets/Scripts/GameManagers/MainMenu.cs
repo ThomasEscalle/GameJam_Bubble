@@ -5,6 +5,12 @@ using UnityEngine;
 public class MainMenu : MonoBehaviour
 {
 
+    [SerializeField] private AudioSource Musique_Theme;
+    private void Start()
+    {
+        Musique_Theme.loop = true;  
+        Musique_Theme.Play();
+    }
 
     /// Imgui buttons to start a specific level
     public void OnGUI() {
