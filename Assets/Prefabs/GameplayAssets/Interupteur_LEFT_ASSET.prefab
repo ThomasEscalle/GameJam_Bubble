@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8104121922969269103}
   - component: {fileID: 6403666453776411340}
   - component: {fileID: 7037191720251372868}
-  - component: {fileID: 1600763151224991322}
+  - component: {fileID: 4086521535301171892}
   m_Layer: 0
   m_Name: Interupteur_LEFT_MESH
   m_TagString: laserReceiver
@@ -106,7 +106,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1600763151224991322
+--- !u!114 &4086521535301171892
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7108343577513723901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73c4d364f305e1147883d7bb7e88fbc2, type: 3}
+  m_Script: {fileID: 11500000, guid: c0dd2e78b29771044aa34f3a2dd65de1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   eventChannel: 0

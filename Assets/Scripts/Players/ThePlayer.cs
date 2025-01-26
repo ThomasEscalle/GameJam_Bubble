@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 using Random = UnityEngine.Random;
-using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class lastplayer : MonoBehaviour
 {
@@ -45,8 +44,9 @@ public class lastplayer : MonoBehaviour
     {
         Flip();
 
-        Interaction();
 
+
+        Interact();
         FaireBulle();
         Move = Input.GetAxis("Horizontal");
         //Marche_sound.Play();
@@ -80,7 +80,6 @@ public class lastplayer : MonoBehaviour
             //rb.velocity = new Vector2(Move * speed, jump * 5);
             rb.velocity = new Vector3(Move * speed, jump * 5,0);
             Jump_sound.Play();
-            Debug.Log("audio");
         }
         else
         {
@@ -129,14 +128,41 @@ public class lastplayer : MonoBehaviour
         }
     }
 
-    private void Interaction()
-    {
-
+    public void Interact(){
         if (Input.GetButtonDown("Interact"))
         {
-            Debug.Log("Interact:on a appuyer sur e, on peut interragir");
+            RaycastHit hit;
+            Vector3 direction = transform.right;
+            if (!bIsFacingRight)
+            {
+                direction = -transform.right;
+            }
+            float distance = 2f;
+
+
+            if (Physics.Raycast(transform.position+ new Vector3(0,0.1f,0), direction, out hit, distance))
+            {   
+                Debug.Log(hit.transform.gameObject.name);
+
+                Interupteur interupteur = hit.transform.gameObject.GetComponent<Interupteur>();
+                if(interupteur != null) {
+                    interupteur.trigger();
+                }
+                
+            }
+            else if (Physics.Raycast(transform.position - new Vector3(0,0.1f,0), direction, out hit, distance))
+            {
+                Debug.Log(hit.transform.gameObject.name);
+                Interupteur interupteur = hit.transform.gameObject.GetComponent<Interupteur>();
+                if(interupteur != null) {
+                    interupteur.trigger();
+                }
+            }
+
+            Debug.DrawRay(transform.position, direction * distance  , Color.red, 1.0f);
         }
     }
+
 
     private void FaireBulle()
     {
@@ -172,7 +198,7 @@ public class lastplayer : MonoBehaviour
         else if ((Input.GetButtonDown("MakeBulle")) && Input.GetKey(KeyCode.W) && nbreBulle < 3)
         {
             /// Tire une bulle vers le haut
-            Vector3 spawnPosition = transform.position;
+            Vector3 spawnPosition = transform.position + Vector3.up * bubleSpawnDistance;
             Vector3 spawnDirection = Vector3.up;
 
             GameObject bulle = Instantiate(BulleMesh, spawnPosition, Quaternion.identity);

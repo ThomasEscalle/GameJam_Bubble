@@ -142,9 +142,10 @@ GameObject:
   - component: {fileID: 7676196120737419406}
   - component: {fileID: 7471058411354784247}
   - component: {fileID: 8657964907561027563}
+  - component: {fileID: -3832511165435847369}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -264,9 +265,9 @@ MonoBehaviour:
   bIsFacingRight: 1
   BulleMesh: {fileID: 457866998609760459, guid: 525ad6ef0c5a8ea4abafc911ebace5d5,
     type: 3}
-  Marche_sound: {fileID: 0}
-  Jump_sound: {fileID: 0}
-  Create_Bulle_sound: {fileID: 0}
+  Marche_sound: {fileID: 6806104481745118378}
+  Jump_sound: {fileID: 5468974778170031799}
+  Create_Bulle_sound: {fileID: 8749089376210501257}
 --- !u!23 &8657964907561027563
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -309,6 +310,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-3832511165435847369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905184988545752520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d4296431346ba94d90a715aeb180cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1274115412624011169
 GameObject:
   m_ObjectHideFlags: 0

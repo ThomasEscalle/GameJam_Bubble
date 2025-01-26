@@ -20,6 +20,8 @@ public class MirrorReceveur : MonoBehaviour
     public void trigger() {
         if (timeSinceLastTrigger > timeToWait) {
             timeSinceLastTrigger = 0;
+
+            Debug.Log("Triggering event on channel " + eventChannel);
             
             /// Get all the "Door" objects in the scene
             Door[] doors = FindObjectsOfType<Door>();

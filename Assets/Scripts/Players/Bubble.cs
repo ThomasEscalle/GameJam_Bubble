@@ -65,6 +65,14 @@ public class Bubble : MonoBehaviour
         {
             DestroySelf();
         }
+
+        /// If the bubble colide with an object that contains a "BubbleButton" script, trigger the button.
+        BubbleButton bubbleButton = other.gameObject.GetComponent<BubbleButton>();
+        if (bubbleButton != null)
+        {
+            bubbleButton.trigger();
+            DestroySelf();
+        }
     }
 
     public void OnTriggerExit(Collider other)

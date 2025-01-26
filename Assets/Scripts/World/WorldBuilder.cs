@@ -205,12 +205,9 @@ public class WorldBuilder : MonoBehaviour
 
                     }
                     else if(tile.type == Tile.Type.Asset) {
-                        Debug.Log("Asset");
-
                         /// Create the asset
                         GameObject asset = Instantiate(tile.prefab, new Vector3((i * tileSize) + 0.5f,  (j * tileSize) +0.5f, 0.5f), Quaternion.identity);
                         asset.transform.parent = assetsParent;
-
                         
                     }
                     
