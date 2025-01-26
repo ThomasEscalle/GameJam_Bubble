@@ -21,6 +21,8 @@ public class Ventilateur : MonoBehaviour
     /// The collider of the ventilator (where the bubble object will be affected).
     public BoxCollider collider;
 
+    public int EventChannel;
+
     public void Start()
     {
         /// Set the range of the ventilator.
