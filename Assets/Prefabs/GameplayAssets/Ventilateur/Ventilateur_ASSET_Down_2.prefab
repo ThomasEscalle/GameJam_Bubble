@@ -52,7 +52,7 @@ MonoBehaviour:
   range: 8
   collider: {fileID: 3859731994422393890}
   EventChannel: 0
-  enabled: 1
+  menabled: 0
 --- !u!54 &9079671473235765658
 Rigidbody:
   m_ObjectHideFlags: 0

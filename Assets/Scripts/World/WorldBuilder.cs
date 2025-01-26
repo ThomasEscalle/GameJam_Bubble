@@ -206,6 +206,11 @@ public class WorldBuilder : MonoBehaviour
                     }
                     else if(tile.type == Tile.Type.Asset) {
                         /// Create the asset
+                        if(tile.prefab == null) {
+                            Debug.LogError("No prefab found for asset " + tile.name);
+                            continue;
+                        }
+
                         GameObject asset = Instantiate(tile.prefab, new Vector3((i * tileSize) + 0.5f,  (j * tileSize) +0.5f, 0.5f), Quaternion.identity);
                         asset.transform.parent = assetsParent;
                         

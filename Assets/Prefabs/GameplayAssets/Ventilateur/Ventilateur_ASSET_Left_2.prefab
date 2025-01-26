@@ -49,7 +49,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 1
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 8, z: 1}
   m_Center: {x: 0, y: 4.5, z: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   range: 8
   collider: {fileID: 2727781896854054349}
   EventChannel: 0
-  enabled: 1
+  menabled: 0
 --- !u!54 &7759062918682311988
 Rigidbody:
   m_ObjectHideFlags: 0

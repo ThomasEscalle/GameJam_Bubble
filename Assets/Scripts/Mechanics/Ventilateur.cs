@@ -100,6 +100,7 @@ public class Ventilateur : MonoBehaviour
             Bubble bubble = other.GetComponent<Bubble>();
             if (bubble != null)
             {
+                Debug.Log("Bubble found");
                 if (direction == Direction.Up)
                 {
                     bubble.disiredDirection = Vector3.up;
@@ -112,6 +113,7 @@ public class Ventilateur : MonoBehaviour
                 }
                 else if (direction == Direction.Left)
                 {
+                    Debug.Log("LEEEEEFT");
                     bubble.disiredDirection = Vector3.left;
                     bubble.speed = 5.0f;
                 }
