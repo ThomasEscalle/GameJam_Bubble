@@ -561,6 +561,18 @@ MonoBehaviour:
     image: {fileID: 2800000, guid: 777bec3306986f2428e202194515fa5e, type: 3}
   - name: level_6
     image: {fileID: 2800000, guid: bc70717e1f99eca48bbda2c7dd885918, type: 3}
+  - name: level_7
+    image: {fileID: 2800000, guid: 1648494e8916bc445a1be462dd69a523, type: 3}
+  - name: level_8
+    image: {fileID: 2800000, guid: 9562c7fc09377d046add7eeef25a39f7, type: 3}
+  - name: level_9
+    image: {fileID: 2800000, guid: 008286938cf26ec4da99caea8be162a4, type: 3}
+  - name: level_10
+    image: {fileID: 2800000, guid: 3c5ca2432f746ac48a7dfe0be977c892, type: 3}
+  - name: level_11
+    image: {fileID: 2800000, guid: a288f2cbeb2adf94f8c7eea01c0e207e, type: 3}
+  - name: level_12
+    image: {fileID: 2800000, guid: 4717ceed08b431a4ebfc6e7696a927f0, type: 3}
   currentLevel: -1
 --- !u!1 &1815851930
 GameObject:

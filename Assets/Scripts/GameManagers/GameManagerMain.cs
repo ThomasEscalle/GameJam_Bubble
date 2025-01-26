@@ -108,10 +108,8 @@ public class GameManagerMain : MonoBehaviour
         Debug.Log("Loading level " + level);  
 
         /// Load the scene level
-        SceneManager.LoadScene("02_PlayScene");
         currentLevel = level;
-
-
+        SceneManager.LoadScene("02_PlayScene");
         
     }
 

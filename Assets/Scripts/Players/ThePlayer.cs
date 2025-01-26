@@ -18,6 +18,8 @@ public class lastplayer : MonoBehaviour
     public float speed;
     public float jump;
 
+    private bool isVictory = false;
+
     public float bubleSpawnDistance = 1.0f;
 
     private bool lastActionIsJump = false;
@@ -41,7 +43,7 @@ public class lastplayer : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         grounded = true;
-        // a modifier si le perso est déplacer dans unity
+        // a modifier si le perso est dï¿½placer dans unity
         b_Sound_marche = false;
         
     }
@@ -128,7 +130,18 @@ public class lastplayer : MonoBehaviour
         if(other.gameObject.layer == 7)
         {
             Debug.Log("VICOTRY");
-            GameManagerMain.instance.LoadNextLevel();
+            /// Only call this function once every 2 seconds
+            if (!isVictory)
+            {
+                isVictory = true;
+                GameManagerMain.instance.LoadNextLevel();
+            }
+        }
+
+        if(other.gameObject.layer == 8)
+        {
+            Debug.Log("DEATH");
+            GameManagerMain.instance.ResetLevel();
         }
 
 

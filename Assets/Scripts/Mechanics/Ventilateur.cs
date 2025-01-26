@@ -79,18 +79,22 @@ public class Ventilateur : MonoBehaviour
                 if (direction == Direction.Up)
                 {
                     bubble.disiredDirection = Vector3.up;
+                    bubble.speed = 5.0f;
                 }
                 else if (direction == Direction.Down)
                 {
                     bubble.disiredDirection = Vector3.down;
+                    bubble.speed = 5.0f;
                 }
                 else if (direction == Direction.Left)
                 {
                     bubble.disiredDirection = Vector3.left;
+                    bubble.speed = 5.0f;
                 }
                 else if (direction == Direction.Right)
                 {
                     bubble.disiredDirection = Vector3.right;
+                    bubble.speed = 5.0f;
                 }
             }
         }
