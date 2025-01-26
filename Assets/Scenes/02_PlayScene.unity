@@ -447,32 +447,60 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 6085804564474893803, guid: fa196b93d0904084d9d28f2e7847591c,
       type: 3}
-  - name: Bubble_Button_Top
+  - name: Bubble_Button_Top_0
     color: {r: 0.7607844, g: 0.74509805, b: 0.40000004, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 633751551947734120, guid: d2259feb84847b94e9bccd6b0bd3444b, type: 3}
-  - name: Bubble_Button_Bottom
+    prefab: {fileID: 633751551947734120, guid: b45466eb5c8d675468d0e39e03a69b15, type: 3}
+  - name: Bubble_Button_Bottom_0
     color: {r: 0.69411767, g: 0.6784314, b: 0.31764707, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 1359436920067383918, guid: 34feebf337938524faa0f27c4e1b86f6,
+    prefab: {fileID: 1359436920067383918, guid: 31e8e64ba39fc7548b10116c35c9ef56,
       type: 3}
-  - name: Bubble_Button_Right
+  - name: Bubble_Button_Right_0
     color: {r: 0.5254902, g: 0.50980395, b: 0.1764706, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7820043859185999550, guid: 8a4a3551dca257744beaf35d14290fb8,
+    prefab: {fileID: 7820043859185999550, guid: 064ff7d82c5ffcc4b9f89bb8847a0960,
       type: 3}
-  - name: Bubble_Button_Left
+  - name: Bubble_Button_Left_0
     color: {r: 0.60784316, g: 0.5882353, b: 0.24313727, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7361468811465898428, guid: c1ac19c85b9914d4899abd8959ee407f,
+    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+      type: 3}
+  - name: Bubble_Button_Top_1
+    color: {r: 0.7607844, g: 0.6784314, b: 0.40000004, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+      type: 3}
+  - name: Bubble_Button_Bottom_1
+    color: {r: 0.68235296, g: 0.59607846, b: 0.31764707, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+      type: 3}
+  - name: Bubble_Button_Left_0
+    color: {r: 0.62352943, g: 0.5411765, b: 0.27450982, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+      type: 3}
+  - name: Bubble_Button_Left_0
+    color: {r: 0.5254902, g: 0.454902, b: 0.21568629, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
       type: 3}
   tilemapWidth: 2048
   tileWidth: 256

@@ -118,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b788b34bf591b8438f89af437bac8cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  eventChannel: 1
 --- !u!1 &7820043859185999550
 GameObject:
   m_ObjectHideFlags: 0
@@ -128,7 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1986824735455007012}
   m_Layer: 0
-  m_Name: Bubble_Button_RIGHT_ASSET
+  m_Name: Bubble_Button_RIGHT_ASSET_1
   m_TagString: laserReceiver
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
