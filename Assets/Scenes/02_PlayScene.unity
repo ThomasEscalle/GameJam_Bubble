@@ -433,6 +433,20 @@ MonoBehaviour:
     tileY: 2
     prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
       type: 3}
+  - name: Interupteur_LEFT
+    color: {r: 0.2901961, g: 0.6313726, b: 0.5254902, a: 0.003921569}
+    type: 1
+    tileX: 7
+    tileY: 2
+    prefab: {fileID: 8511667305264623898, guid: 75631c143c235ad45b422182a2a3013d,
+      type: 3}
+  - name: Interupteur_RIGHT
+    color: {r: 0.21568628, g: 0.5411765, b: 0.4392157, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6085804564474893803, guid: fa196b93d0904084d9d28f2e7847591c,
+      type: 3}
   tilemapWidth: 2048
   tileWidth: 256
   testObject: {fileID: 7075271600237016144, guid: 7b52dd076e944b146b8b631ee8d697b8,

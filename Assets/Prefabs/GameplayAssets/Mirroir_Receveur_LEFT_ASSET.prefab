@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2723779462603823520}
   - component: {fileID: 4857151753984676078}
   - component: {fileID: 8580636814830796963}
+  - component: {fileID: 3620001904994447158}
   m_Layer: 0
   m_Name: Mirroir_Receveur_LEFT_MESH
   m_TagString: laserReceiver
@@ -137,3 +138,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &3620001904994447158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5454355346683885692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c4d364f305e1147883d7bb7e88fbc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -47,6 +47,9 @@ public class Bubble : MonoBehaviour
             DestroySelf();
         }
 
+        /// The speed of the bubble object is going down with time.
+        speed -= force * Time.deltaTime;
+
         /// Animate the bubble object with a sinusoide.
         if (bubbleOffset != null)
         {

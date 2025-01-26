@@ -82,9 +82,14 @@ public class LazerBeam
             
         }
         else if(hit.collider.tag == "laserReceiver"){
-            Debug.Log("RECEIVER HIT");
+
             lazerIndicies.Add(hit.point);
             UpdateLazer();
+            
+            hit.collider.GetComponent<MirrorReceveur>().trigger();
+
+
+
         }
         else {
             lazerIndicies.Add(hit.point);
