@@ -18,12 +18,10 @@ public class Interupteur : MonoBehaviour
         /// Get all the "Ventilateur" objects in the scene, and trigger them if they have the same event channel
         Ventilateur[] ventilateurs = FindObjectsOfType<Ventilateur>();
         foreach (Ventilateur ventilateur in ventilateurs) {
-            if (ventilateur.eventChannel == eventChannel) {
+            if (ventilateur.EventChannel == eventChannel) {
                 ventilateur.trigger();
             }
         }
-
-
     }
 
 
