@@ -76,7 +76,7 @@ public class GameManagerMain : MonoBehaviour
         isLoaded = true;
 
         /// Load the first scene
-        SceneManager.LoadScene("01_Menu");
+        SceneManager.LoadScene("00_01_LoadingScene");
 
         System.Action callback = () => {
             
