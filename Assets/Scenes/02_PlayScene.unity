@@ -460,13 +460,6 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 1359436920067383918, guid: 31e8e64ba39fc7548b10116c35c9ef56,
       type: 3}
-  - name: Bubble_Button_Right_0
-    color: {r: 0.5254902, g: 0.50980395, b: 0.1764706, a: 0.003921569}
-    type: 1
-    tileX: 0
-    tileY: 0
-    prefab: {fileID: 7820043859185999550, guid: 064ff7d82c5ffcc4b9f89bb8847a0960,
-      type: 3}
   - name: Bubble_Button_Left_0
     color: {r: 0.60784316, g: 0.5882353, b: 0.24313727, a: 0.003921569}
     type: 1
@@ -474,33 +467,273 @@ MonoBehaviour:
     tileY: 0
     prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
       type: 3}
+  - name: Bubble_Button_Right_0
+    color: {r: 0.5254902, g: 0.50980395, b: 0.1764706, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7820043859185999550, guid: 064ff7d82c5ffcc4b9f89bb8847a0960,
+      type: 3}
   - name: Bubble_Button_Top_1
     color: {r: 0.7607844, g: 0.6784314, b: 0.40000004, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
-      type: 3}
+    prefab: {fileID: 633751551947734120, guid: d2259feb84847b94e9bccd6b0bd3444b, type: 3}
   - name: Bubble_Button_Bottom_1
     color: {r: 0.68235296, g: 0.59607846, b: 0.31764707, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+    prefab: {fileID: 1359436920067383918, guid: 34feebf337938524faa0f27c4e1b86f6,
       type: 3}
-  - name: Bubble_Button_Left_0
+  - name: Bubble_Button_Left_1
     color: {r: 0.62352943, g: 0.5411765, b: 0.27450982, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+    prefab: {fileID: 7361468811465898428, guid: c1ac19c85b9914d4899abd8959ee407f,
       type: 3}
-  - name: Bubble_Button_Left_0
+  - name: Bubble_Button_Right_1
     color: {r: 0.5254902, g: 0.454902, b: 0.21568629, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 7361468811465898428, guid: acd136aba1cd5424d85d7eca26bdc7b0,
+    prefab: {fileID: 7820043859185999550, guid: 8a4a3551dca257744beaf35d14290fb8,
+      type: 3}
+  - name: Bubble_Button_Top_2
+    color: {r: 0.77647066, g: 0.7137255, b: 0.6156863, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 633751551947734120, guid: eaa4a3da93e339c44a1853a309298a7b, type: 3}
+  - name: Bubble_Button_Bottom_2
+    color: {r: 0.69411767, g: 0.6313726, b: 0.5294118, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 1359436920067383918, guid: 8c2b1e008faafc342a635dd5b349e164,
+      type: 3}
+  - name: Bubble_Button_Left_2
+    color: {r: 0.6, g: 0.5411765, b: 0.43921572, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7361468811465898428, guid: 9db25e70d6179a042a5a6ec7c3b42505,
+      type: 3}
+  - name: Bubble_Button_Right_2
+    color: {r: 0.5058824, g: 0.454902, b: 0.37254903, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 7820043859185999550, guid: 9da35706c64bfbe4e868b67c2f6ae8d8,
+      type: 3}
+  - name: Mirroir_Receveur_TOP_ASSET_0
+    color: {r: 0.72156864, g: 0.019607844, b: 1, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8725228772807183851, guid: 0895ad42fd820154d99b2d49fcff297b,
+      type: 3}
+  - name: Mirroir_Receveur_BOTTOM_ASSET_0
+    color: {r: 0.56078434, g: 0.023529414, b: 0.7725491, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2469659946817890188, guid: 1a35d5119816bed44acffca19ff0683c,
+      type: 3}
+  - name: Mirroir_Receveur_LEFT_ASSET_0
+    color: {r: 0.47058827, g: 0.015686275, b: 0.6509804, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 183658331671997893, guid: fadd8b00bf6f82e46b404083364101f2, type: 3}
+  - name: Mirroir_Receveur_RIGHT_ASSET_0
+    color: {r: 0.31764707, g: 0.043137256, b: 0.427451, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2618882781371257205, guid: 5fe7e50b7e95f574ca6c0381f8463ca3,
+      type: 3}
+  - name: Mirroir_Receveur_TOP_ASSET_1
+    color: {r: 0.8078432, g: 0.40784317, b: 0.9686275, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8725228772807183851, guid: 5081e4d2924d9654dbd562b7194aa2ab,
+      type: 3}
+  - name: Mirroir_Receveur_BOTTOM_ASSET_0
+    color: {r: 0.7254902, g: 0.38431376, b: 0.8588236, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2469659946817890188, guid: 4b6a2da483568664f8a5dd87b6936bbf,
+      type: 3}
+  - name: Mirroir_Receveur_LEFT_ASSET_1
+    color: {r: 0.59607846, g: 0.33333334, b: 0.7019608, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 183658331671997893, guid: 439029f77df1e3a4795d7c1c0b272829, type: 3}
+  - name: Mirroir_Receveur_RIGHT_ASSET_1
+    color: {r: 0.58431375, g: 0.41176474, b: 0.654902, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2618882781371257205, guid: f9e3d8ef451fea446a1ae0319cd336dc,
+      type: 3}
+  - name: Mirroir_Receveur_TOP_ASSET_2
+    color: {r: 0.89019614, g: 0.6862745, b: 0.9686275, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8725228772807183851, guid: dc91d797f4000be4eb60a73d9a039ed7,
+      type: 3}
+  - name: Mirroir_Receveur_BOTTOM_ASSET_2
+    color: {r: 0.7725491, g: 0.59607846, b: 0.83921576, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2469659946817890188, guid: 5e243cc43bf9ee64fabc27b1e4bcc9ee,
+      type: 3}
+  - name: Mirroir_Receveur_LEFT_ASSET_1
+    color: {r: 0.6666667, g: 0.5058824, b: 0.7294118, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 183658331671997893, guid: a1cbb144a5b5553448f95cbeb82332e1, type: 3}
+  - name: Mirroir_Receveur_RIGHT_ASSET_2
+    color: {r: 0.4431373, g: 0.31764707, b: 0.49411768, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 2618882781371257205, guid: 9ff11db9fae3a384996f8fdd9b67c1ab,
+      type: 3}
+  - name: Ventilateur_ASSET_Up_0
+    color: {r: 0, g: 0.8235295, b: 0.5372549, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8395350716752213654, guid: a6521a48b0af27b4aa6395362f419f6a,
+      type: 3}
+  - name: Ventilateur_ASSET_Down_0
+    color: {r: 0.011764707, g: 0.7490196, b: 0.4901961, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 1424509231895145990, guid: 4228981dbe6e4b2418542d98529dfac0,
+      type: 3}
+  - name: Ventilateur_ASSET_Left_0
+    color: {r: 0.015686275, g: 0.6431373, b: 0.42352945, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 3790265884148184278, guid: 876d31d28f01fae4f95662c45b939a86,
+      type: 3}
+  - name: Ventilateur_ASSET_Right_0
+    color: {r: 0.015686275, g: 0.53333336, b: 0.3529412, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8783255512656312296, guid: 2589690b8e93e1e4893eda02459fb581,
+      type: 3}
+  - name: Ventilateur_ASSET_Up_1
+    color: {r: 0.3803922, g: 0.9725491, b: 0.76470596, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8395350716752213654, guid: b43213d38560d9c40a6eeb97e02919a1,
+      type: 3}
+  - name: Ventilateur_ASSET_Down_1
+    color: {r: 0.32941177, g: 0.8588236, b: 0.6745098, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 1424509231895145990, guid: 8ea1b34b09da76748b91249388b40eb4,
+      type: 3}
+  - name: Ventilateur_ASSET_Left_1
+    color: {r: 0.26666668, g: 0.7254902, b: 0.5647059, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 3790265884148184278, guid: 5b2cb98b3e891ee41b5ff5c3e267c559,
+      type: 3}
+  - name: Ventilateur_ASSET_Right_1
+    color: {r: 0.20784315, g: 0.49803925, b: 0.39607847, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8783255512656312296, guid: 80f7b578e57b86642b38258c1b4bd11d,
+      type: 3}
+  - name: Ventilateur_ASSET_Up_2
+    color: {r: 0.6784314, g: 1, b: 0.8862746, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8395350716752213654, guid: fb1201e6543da894a9b0d89b607a69d4,
+      type: 3}
+  - name: Ventilateur_ASSET_Down_2
+    color: {r: 0.5764706, g: 0.87843144, b: 0.7725491, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 1424509231895145990, guid: a265e1c71f39ae648a8689ca955fcb4a,
+      type: 3}
+  - name: Ventilateur_ASSET_Left_2
+    color: {r: 0.46274513, g: 0.7058824, b: 0.61960787, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 3790265884148184278, guid: 502a442afad4bba41ba09ee6b3fb362e,
+      type: 3}
+  - name: Ventilateur_ASSET_Right_2
+    color: {r: 0.36078432, g: 0.5372549, b: 0.47450984, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8783255512656312296, guid: 50a6f110c07e17e458e19067b5bd1332,
+      type: 3}
+  - name: Interupteur_LEFT_ASSET_0
+    color: {r: 1, g: 0, b: 0, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8511667305264623898, guid: 75631c143c235ad45b422182a2a3013d,
+      type: 3}
+  - name: Interupteur_LEFT_ASSET_1
+    color: {r: 0.9843138, g: 0.3803922, b: 0.3803922, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8511667305264623898, guid: 11166349b93e64e4f996d178c88032cf,
+      type: 3}
+  - name: Interupteur_LEFT_ASSET_2
+    color: {r: 0.96470594, g: 0.54509807, b: 0.54509807, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 8511667305264623898, guid: a673cb74ee80c0847ae542928290b6c0,
+      type: 3}
+  - name: Interupteur_RIGHT_ASSET_0
+    color: {r: 0.8352942, g: 0.35686275, b: 0.35686275, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6085804564474893803, guid: fa196b93d0904084d9d28f2e7847591c,
+      type: 3}
+  - name: Interupteur_RIGHT_ASSET_1
+    color: {r: 0.96470594, g: 0.54509807, b: 0.54509807, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6085804564474893803, guid: b30e1c2e1e72bc448b34177abdafb2b5,
+      type: 3}
+  - name: Interupteur_LEFT_ASSET_2
+    color: {r: 0.7254902, g: 0.4666667, b: 0.4666667, a: 0.003921569}
+    type: 1
+    tileX: 0
+    tileY: 0
+    prefab: {fileID: 6085804564474893803, guid: 5cb57a1c996efc1468b075843058ca2d,
       type: 3}
   tilemapWidth: 2048
   tileWidth: 256
