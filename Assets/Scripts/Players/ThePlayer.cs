@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using UnityEngine;
+using Random = UnityEngine.Random;
 using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class lastplayer : MonoBehaviour
@@ -26,15 +28,16 @@ public class lastplayer : MonoBehaviour
     [SerializeField] protected GameObject BulleMesh;
 
     [Header("Sound Settings")]
-    [SerializeField] private AudioSource Marche;
-    [SerializeField] private AudioSource Jump;
-    [SerializeField] private AudioSource Create_Bulle;
+    [SerializeField] private AudioSource Marche_sound;
+    [SerializeField] private AudioSource Jump_sound;
+    [SerializeField] private AudioSource Create_Bulle_sound;
 
     bool grounded;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        
     }
 
     // Update is called once per frame
@@ -46,10 +49,23 @@ public class lastplayer : MonoBehaviour
 
         FaireBulle();
         Move = Input.GetAxis("Horizontal");
-        if(Move != 0)
+        //Marche_sound.Play();
+        
+        if (Move != 0)
         {
+            
+            
             lastActionIsJump = false;
+            Marche_sound.Stop();
+
         }
+        else
+        {
+            Marche_sound.Play();
+            Marche_sound.loop = true;
+            //Debug.Log("audio");
+        }
+
 
         //rb.velocity = new Vector2(Move * speed, rb.velocity.y);  
 
@@ -63,10 +79,13 @@ public class lastplayer : MonoBehaviour
             lastActionIsJump = true;
             //rb.velocity = new Vector2(Move * speed, jump * 5);
             rb.velocity = new Vector3(Move * speed, jump * 5,0);
+            Jump_sound.Play();
+            Debug.Log("audio");
         }
         else
         {
             rb.velocity = new Vector3(Move * speed, rb.velocity.y, 0);
+            //Jump_sound.Stop();
         }
     }
 
@@ -128,7 +147,8 @@ public class lastplayer : MonoBehaviour
             /// Create the position and the rotation of the bubble
             Vector3 spawnPosition = transform.position;
             Vector3 spawnDirection = transform.right;
-
+            Create_Bulle_sound.Play();
+               
             if (bIsFacingRight)
             {
                 spawnPosition += transform.right * bubleSpawnDistance;
@@ -163,5 +183,8 @@ public class lastplayer : MonoBehaviour
             bubbleScript.disiredDirection = spawnDirection;
             bubbleScript.speed = 5.0f;
         }
+
     }
+
+
 }

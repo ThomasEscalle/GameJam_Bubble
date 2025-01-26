@@ -977,7 +977,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 52fc519b119052e40a627fa90fbbcdfd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.007
+      value: -0.21
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 52fc519b119052e40a627fa90fbbcdfd,
         type: 3}
@@ -1290,6 +1290,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 85.837}
+--- !u!82 &1883207401 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8749089376210501257, guid: 88dde13e66a8cd74d83a6f27f0874110,
+    type: 3}
+  m_PrefabInstance: {fileID: 6405505801811526821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1891056545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1729,11 +1735,56 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[1]
       value: 
       objectReference: {fileID: 2100000, guid: e86c976de894dbb488a452a16a2edf32, type: 2}
+    - target: {fileID: 5468974778170031799, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Priority
+      value: 124
+      objectReference: {fileID: 0}
     - target: {fileID: 6711275220311564092, guid: 88dde13e66a8cd74d83a6f27f0874110,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 16c0774ec1449744eae8508050974beb, type: 2}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Marche_1
+      value: 
+      objectReference: {fileID: 1883207401}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Jump_sound
+      value: 
+      objectReference: {fileID: 6405505801811526823}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Marche_sound
+      value: 
+      objectReference: {fileID: 1883207401}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Create_Bulle_sound
+      value: 
+      objectReference: {fileID: 6405505801811526822}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Audio_Source.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Audio_Source.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a0a79a28429aa544bcfb66cd1a9bbff, type: 3}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Audio_Source.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 53b179bdb1e619f499d8db78b5356d57, type: 3}
+    - target: {fileID: 7471058411354784247, guid: 88dde13e66a8cd74d83a6f27f0874110,
+        type: 3}
+      propertyPath: Audio_Source.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: bb18dff2277825b4cb093d06478c17d5, type: 3}
     - target: {fileID: 8657964907561027563, guid: 88dde13e66a8cd74d83a6f27f0874110,
         type: 3}
       propertyPath: m_Enabled
@@ -1823,6 +1874,18 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1512275952}
   m_SourcePrefab: {fileID: 100100000, guid: 88dde13e66a8cd74d83a6f27f0874110, type: 3}
+--- !u!82 &6405505801811526822 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6806104481745118378, guid: 88dde13e66a8cd74d83a6f27f0874110,
+    type: 3}
+  m_PrefabInstance: {fileID: 6405505801811526821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &6405505801811526823 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 5468974778170031799, guid: 88dde13e66a8cd74d83a6f27f0874110,
+    type: 3}
+  m_PrefabInstance: {fileID: 6405505801811526821}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
