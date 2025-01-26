@@ -127,7 +127,6 @@ public class Ventilateur : MonoBehaviour
                 }
                 else if (direction == Direction.Left)
                 {
-                    Debug.Log("LEEEEEFT");
                     bubble.disiredDirection = Vector3.left;
                     bubble.speed = 5.0f;
                 }
@@ -144,7 +143,7 @@ public class Ventilateur : MonoBehaviour
     {
         if (allume)
         {
-            Audio_ventilo.Stop();
+            //Audio_ventilo.Stop();
         }
         else
         {

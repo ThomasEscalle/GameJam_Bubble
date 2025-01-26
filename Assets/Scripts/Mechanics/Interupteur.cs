@@ -22,7 +22,10 @@ public class Interupteur : MonoBehaviour
         Ventilateur[] ventilateurs = FindObjectsOfType<Ventilateur>();
         foreach (Ventilateur ventilateur in ventilateurs) {
             if (ventilateur.EventChannel == eventChannel) {
-                Particule.Play();
+                ventilateur.trigger();
+
+                /*
+                // Particule.Play();
                 if (On)
                 {
                     Audio_eteint.Play();
@@ -30,8 +33,7 @@ public class Interupteur : MonoBehaviour
                 else
                 {
                     Audio_allume.Play();
-                }
-                ventilateur.trigger();
+                }*/
             }
         }
     }

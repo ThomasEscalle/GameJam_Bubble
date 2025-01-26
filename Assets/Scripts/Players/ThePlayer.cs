@@ -134,7 +134,7 @@ public class lastplayer : MonoBehaviour
             /// Only call this function once every 2 seconds
             if (!isVictory)
             {
-                Box_Savon.Play();
+                //Box_Savon.Play();
                 isVictory = true;
                 
                 GameManagerMain.instance.LoadNextLevel();
@@ -193,8 +193,10 @@ public class lastplayer : MonoBehaviour
 
                 Interupteur interupteur = hit.transform.gameObject.GetComponent<Interupteur>();
                 if(interupteur != null) {
+                    Debug.Log("Interupteur");
                     interupteur.trigger();
                 }
+                
                 
             }
             else if (Physics.Raycast(transform.position - new Vector3(0,0.1f,0), direction, out hit, distance))
@@ -207,6 +209,7 @@ public class lastplayer : MonoBehaviour
             }
 
             Debug.DrawRay(transform.position, direction * distance  , Color.red, 1.0f);
+            Debug.DrawRay(transform.position, -direction * distance , Color.red, 1.0f);
         }
     }
 
