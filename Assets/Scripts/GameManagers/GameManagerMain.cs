@@ -77,6 +77,14 @@ public class GameManagerMain : MonoBehaviour
 
         /// Load the first scene
         SceneManager.LoadScene("01_Menu");
+
+        System.Action callback = () => {
+            
+        };
+
+        /// Fade the game in
+        //FadeTransition.Instance.FadeIn(1.0f, callback);
+
     }
 
     #endregion
@@ -107,6 +115,9 @@ public class GameManagerMain : MonoBehaviour
         
     }
 
+    public void ResetLevel() {
+        LoadLevel(currentLevel);
+    }
 
     public void LoadLevel(string level) {
         for (int i = 0; i < levels.Length; i++) {

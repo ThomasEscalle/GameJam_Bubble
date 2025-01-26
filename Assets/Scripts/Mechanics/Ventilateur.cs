@@ -23,6 +23,22 @@ public class Ventilateur : MonoBehaviour
 
     public int EventChannel;
 
+    public bool enabled = true;
+
+    public void trigger()
+    {
+        if (enabled)
+        {
+            enabled = false;
+        }
+        else
+        {
+            enabled = true;
+        }
+
+    }
+
+
     public void Start()
     {
         /// Set the range of the ventilator.
@@ -55,8 +71,8 @@ public class Ventilateur : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bubble"))
-        {
+        if (other.gameObject.CompareTag("Bubble") && enabled)
+        {   
             Bubble bubble = other.GetComponent<Bubble>();
             if (bubble != null)
             {

@@ -14,18 +14,30 @@ public class Interupteur : MonoBehaviour
 
     public void trigger() {
         Debug.Log("Triggering event on channel " + eventChannel);
+
+        /// Get all the "Ventilateur" objects in the scene, and trigger them if they have the same event channel
+        Ventilateur[] ventilateurs = FindObjectsOfType<Ventilateur>();
+        foreach (Ventilateur ventilateur in ventilateurs) {
+            if (ventilateur.eventChannel == eventChannel) {
+                ventilateur.trigger();
+            }
+        }
+
+
     }
 
+
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Bubble")) {
             if (SCR_ventilateur.EventChannel == eventChannel)
             {
-                Debug.Log(" Lien retrouvé");
+                Debug.Log(" Lien retrouvï¿½");
             }
             else
             {
-                Debug.Log("Lien pas retrouvé");
+                Debug.Log("Lien pas retrouvï¿½");
             }
             if (On)
             {
@@ -37,10 +49,11 @@ public class Interupteur : MonoBehaviour
             {
                 Vent_Ventilo.enabled = true;
                 On = true;
-                Debug.Log("Allumé");
+                Debug.Log("Allumï¿½");
             }
 
         }
     }
+    */
 
 }
