@@ -15,6 +15,8 @@ public class Ventilateur : MonoBehaviour
     /// The direction of the ventilator.
     public Direction direction = Direction.Up;
     
+
+    
     /// The range of the ventilator.
     public float range = 8.0f;
 
@@ -23,24 +25,46 @@ public class Ventilateur : MonoBehaviour
 
     public int EventChannel;
 
-    public bool enabled = true;
+    public bool menabled = true;
+
+    private ParticleSystem ps;
 
     public void trigger()
     {
-        if (enabled)
+        if (menabled)
         {
-            enabled = false;
+            menabled = false;
+            ps.Stop();
         }
         else
         {
-            enabled = true;
+            menabled = true;
+            ps.Play();
         }
 
     }
 
+    public void Awake(){
+        /// Get the particle system in the children of the ventilator.
+        ps = GetComponentInChildren<ParticleSystem>();
+        if (ps == null)
+        {
+            Debug.LogError("No particle system found in the children of the ventilator");
+        }
+    }
 
     public void Start()
     {
+        if(menabled)
+        {
+            ps.Play();
+        }
+        else
+        {
+            ps.Stop();
+        }
+
+
         /// Set the range of the ventilator.
         if (collider != null)
         {
@@ -71,7 +95,7 @@ public class Ventilateur : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Bubble") && enabled)
+        if (other.gameObject.CompareTag("Bubble") && menabled)
         {   
             Bubble bubble = other.GetComponent<Bubble>();
             if (bubble != null)

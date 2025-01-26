@@ -11,6 +11,14 @@ public class LoadMenuScene : MonoBehaviour
          StartCoroutine(LoadMenu()); 
     }
 
+    public void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("01_Menu");
+        }
+    }
+
     IEnumerator LoadMenu()
     {
         yield return new WaitForSeconds(8);
