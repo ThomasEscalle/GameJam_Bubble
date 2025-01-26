@@ -2,12 +2,15 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Unity.VisualScripting;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class lastplayer : MonoBehaviour
 {
     private Rigidbody rb;
+    private float Delta_Timmer=0;
+    private bool b_Sound_marche;
 
     private float Move;
 
@@ -36,6 +39,7 @@ public class lastplayer : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        b_Sound_marche = false;
         
     }
 
@@ -44,7 +48,7 @@ public class lastplayer : MonoBehaviour
     {
         Flip();
 
-
+        
 
         Interact();
         FaireBulle();
@@ -53,18 +57,26 @@ public class lastplayer : MonoBehaviour
         
         if (Move != 0)
         {
-            
-            
-            lastActionIsJump = false;
-            Marche_sound.Stop();
+            //Debug.Log("Marche_sound");
+
+            if (!(Marche_sound.isPlaying))
+            {
+                Marche_sound.Play();
+            }
+            else
+            {
+                Debug.Log("wait");
+            }
+ 
+            lastActionIsJump = false;  
 
         }
         else
         {
-            Marche_sound.Play();
-            Marche_sound.loop = true;
-            //Debug.Log("audio");
+            Marche_sound.Stop();
         }
+   
+  
 
 
         //rb.velocity = new Vector2(Move * speed, rb.velocity.y);  
@@ -167,6 +179,9 @@ public class lastplayer : MonoBehaviour
     private void FaireBulle()
     {
 
+       
+        
+
         if ((Input.GetButtonDown("MakeBulle")) && nbreBulle < 3 && !Input.GetKey(KeyCode.W))
         {
 
@@ -174,7 +189,8 @@ public class lastplayer : MonoBehaviour
             Vector3 spawnPosition = transform.position;
             Vector3 spawnDirection = transform.right;
             Create_Bulle_sound.Play();
-               
+
+
             if (bIsFacingRight)
             {
                 spawnPosition += transform.right * bubleSpawnDistance;
@@ -200,6 +216,7 @@ public class lastplayer : MonoBehaviour
             /// Tire une bulle vers le haut
             Vector3 spawnPosition = transform.position + Vector3.up * bubleSpawnDistance;
             Vector3 spawnDirection = Vector3.up;
+            Create_Bulle_sound.Play();
 
             GameObject bulle = Instantiate(BulleMesh, spawnPosition, Quaternion.identity);
             nbreBulle++;
