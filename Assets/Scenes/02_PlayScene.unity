@@ -312,21 +312,21 @@ MonoBehaviour:
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+    prefab: {fileID: 6808832193466237351, guid: 80a611566028f524190be6bec714d62c,
       type: 3}
   - name: MIRROR_TOP_RIGHT
     color: {r: 0.09019608, g: 0.49019608, b: 0.5294118, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+    prefab: {fileID: 3215892933348331401, guid: 1eb8e86fd9d548c428691976bc6a9fde,
       type: 3}
   - name: MIRROR_TOP_LEFT
     color: {r: 0.05882353, g: 0.4, b: 0.43137255, a: 0.003921569}
     type: 1
     tileX: 0
     tileY: 0
-    prefab: {fileID: 6380300589965761666, guid: 0a10be9144e9e5f459b106312d0a984e,
+    prefab: {fileID: 6358146818704267190, guid: e829773271febda45a8ce74712e696ed,
       type: 3}
   - name: Careaux3
     color: {r: 0.20392159, g: 0.20392159, b: 0.21960786, a: 0.003921569}
